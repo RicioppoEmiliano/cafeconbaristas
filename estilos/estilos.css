@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,500;1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+/* font-family: "Kanit", sans-serif; */
+
+header {
+    background-color: rgb(73, 41, 0);
+    display: grid;
+    grid-template-columns: 20% 20% 30% 10% 20%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "none buscador buscador buscador logo"
+    "none nav nav usuario logo"
+    "none redes redes tienda logo";
+    font-weight: 200;
+}
+
+.logo {
+    grid-area: logo;
+    justify-self: center;
+}
+
+.logo img {
+    width: 12rem;
+    height: 12rem;
+}
+
+.nav {
+    grid-area: nav;
+    font-size: 2rem;
+    justify-self: center;
+}
+
+nav a:hover {
+    font-size: 30px;
+    text-shadow: 0 0 5px #fff241;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 30px;
+    color: aliceblue;
+}
+
+.redesHeader {
+    grid-area: redes;
+    font-size: 2rem;
+    justify-self: center;
+}
+
+.redesHeader a:hover {
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(76, 0, 255);
+}
+
+.fa-brands {
+    color: aliceblue;
+    margin-left: 85px;
+}
+
+.usuario {
+    grid-area: usuario;
+    justify-self: end;
+    font-size: 2rem;
+    padding-right: 5px;
+}
+
+.usuario a:hover {
+    font-size: 30px;
+}
+
+.fa-user {
+    color: aliceblue;
+}
+
+.tienda {
+    grid-area: tienda;
+    font-size: 2rem;
+    justify-self: end;
+}
+
+.tienda a:hover {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.fa-shop {
+    color: aliceblue;
+}
+
+.buscador {
+    grid-area: buscador;
+    font-size: 1.5rem;
+    align-self: center;
+    justify-self: center;  
+}
+
+.fa-magnifying-glass {
+    color: aliceblue;
+    padding-left: 20px;
+    padding-right: 120px; 
+}
+
+.fa-magnifying-glass a:hover {
+    font-size: 30px;
+}
+
+.header input {
+    border-radius: 40px;
+    width: 500px;
+    height: 30px;
+    font-weight: 500;
+}
+
+.bannerInicio {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.textoBannerInicio {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: rgba(230, 230, 230, 0.059);
+    border: rgb(0, 0, 0) 8px solid;
+    border-radius: 5rem;
+    bottom: 20rem;
+    left: 20rem;
+ 
+}
+
+.textoBannerInicio:hover{
+    background-color: rgb(73, 41, 0);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.textoBannerInicio h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+.productosInicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+
+.producto {
+    text-align: center;
+    background-color: rgb(62, 77, 178);
+    height: 700px;
+    width: 400px;
+    border: 2px cornflowerblue solid;
+    border-radius: 15px;
+    margin: 35px;
+}
+
+.producto__img {
+    padding: 10px;
+}
+
+.producto__titulo {
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.producto__parrafo {
+    color: #000000;
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+.producto__link {
+    color: aliceblue;
+    background-color: rgba(2, 64, 118, 0.511);
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+}
