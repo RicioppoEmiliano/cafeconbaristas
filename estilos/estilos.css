@@ -194,8 +194,30 @@ nav a:hover {
     cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
-    body {
-      background-color: lightgreen;
-    }
+.h2Galeria {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(22, 24, 65);
+    padding: 5px;
+    
+}
+
+.contenedorGaleria {
+    width: 100%;
+    height: auto;
+    background-color: #fff241;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 200px);
+}
+
+.item {
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.item1 {
+    background-image: url(../multimedia/foto6.jpg);
 }
