@@ -200,13 +200,54 @@ nav a:hover {
 }
 
 .producto__link {
-    color: aliceblue;
-    background-color: rgba(2, 64, 118, 0.511);
+    color: greenyellow;
     text-decoration: none;
     text-align: center;
     font-size: 30px;
     cursor: pointer;
 }
+
+.sectionInicio {
+    background-color: rgb(73, 198, 229);
+    display: flex;
+}
+
+.sectionInicio div img {
+    display: block;
+    width: 100%;
+}
+
+.sectionInicio div h2 {
+    color: rgb(60 4 119);
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.sectionInicio div p {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 150px 5px;
+}
+
+footer {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+}
+/*
+
+.sectionInicio div img {
+    height: auto;
+    max-width: 50%;
+    
+    
+}
+*/
 
 /*
 
