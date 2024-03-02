@@ -11,8 +11,6 @@
 
 /* font-family: "Kanit", sans-serif; */
 
-/* HEADER */
-
 header {
     background-color: rgb(73, 198, 229);
     display: grid;
@@ -46,6 +44,8 @@ footer ul ol a {
     color: rgb(185,121,87);
 }
 
+/* HEADER */
+
 .logo {
     grid-area: logo;
     justify-self: center;
@@ -62,15 +62,13 @@ footer ul ol a {
     justify-content: space-evenly;
     padding-right: 20px;
     font-size: 2rem;
-   
 }
 
 .nav a {
     display: inline-block;
     text-decoration: none;
     list-style: none;
-    padding-left: 30px;
-    
+    padding-left: 30px; 
 }
 
 nav a:hover {
@@ -143,8 +141,9 @@ nav a:hover {
 /* MAIN INICIO */
 
 .bannerInicio {
-    width: 100vw;
-    margin: 0 auto;
+    background-image: url(../multimedia/foto10.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .textoBannerInicio {
@@ -154,7 +153,7 @@ nav a:hover {
     background-color: rgba(230, 230, 230, 0.059);
     border: rgb(0, 0, 0) 8px solid;
     border-radius: 5rem;
-    bottom: 20rem;
+    bottom: 10rem;
     left: 20rem;
 }
 
@@ -174,9 +173,10 @@ nav a:hover {
 
 .productosInicio {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 15%;
+    background-color: black;
 }
 
 .producto {
@@ -235,6 +235,21 @@ nav a:hover {
 .sectionInicio div p {
     font-size: 30px;
     padding: 150px 5px;
+}
+
+/* NOSOTROS */
+
+.mainNosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:    
+    h1 h1
+    video textovideo
+    video textovideo
+    imgtexto imgtexto
+    textoimg imggranos
+    textoimg imggranos;
 }
 
 
