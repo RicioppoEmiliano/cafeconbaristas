@@ -5,6 +5,8 @@
     padding: 0;
     margin: 0;
     font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    color: aliceblue;
 }
 
 /* font-family: "Kanit", sans-serif; */
@@ -14,13 +16,34 @@
 header {
     background-color: rgb(73, 198, 229);
     display: grid;
-    grid-template-columns: 20% 20% 30% 10% 20%;
+    grid-template-columns: 25% 20% 30% 10% 15%;
     grid-template-rows: 33% 33% 33%;
     grid-template-areas: 
     "none buscador buscador buscador logo"
     "none nav nav usuario logo"
     "none redes redes tienda logo";
-    font-weight: 200;
+}
+
+h1 {
+    background-color: burlywood;
+    text-align: center;
+    font-weight: 500;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+}
+
+footer ul ol {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer ul ol a {
+    color: rgb(185,121,87);
 }
 
 .logo {
@@ -37,15 +60,9 @@ header {
     grid-area: nav;
     display: flex;
     justify-content: space-evenly;
-    padding-right: 50px;
+    padding-right: 20px;
     font-size: 2rem;
    
-}
-
-nav a:hover {
-    color: #fff241;
-    font-size: 30px;
-    text-decoration: underline;
 }
 
 .nav a {
@@ -53,7 +70,13 @@ nav a:hover {
     text-decoration: none;
     list-style: none;
     padding-left: 30px;
-    color: aliceblue;
+    
+}
+
+nav a:hover {
+    color: #f8ff35;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 .redesHeader {
@@ -85,10 +108,6 @@ nav a:hover {
     font-size: 30px;
 }
 
-.fa-user {
-    color: aliceblue;
-}
-
 .tienda {
     grid-area: tienda;
     font-size: 2rem;
@@ -97,11 +116,6 @@ nav a:hover {
 
 .tienda a:hover {
     font-size: 30px;
-
-}
-
-.fa-shop {
-    color: aliceblue;
 }
 
 .buscador {
@@ -112,7 +126,6 @@ nav a:hover {
 }
 
 .fa-magnifying-glass {
-    color: aliceblue;
     padding-left: 20px;
     padding-right: 120px; 
 }
@@ -125,7 +138,6 @@ nav a:hover {
     border-radius: 40px;
     width: 500px;
     height: 30px;
-    font-weight: 200;
 }
 
 /* MAIN INICIO */
@@ -147,22 +159,18 @@ nav a:hover {
 }
 
 .textoBannerInicio a {
-    color: aliceblue;
     text-decoration: none;
 }
 
 .textoBannerInicio:hover{
     background-color: rgb(73, 41, 0);
-    color: aliceblue;
     cursor: pointer;
 }
 
 .textoBannerInicio h2 {
     text-align: center;
     font-size: 25px;
-    font-weight: 200;
 }
-
 
 .productosInicio {
     display: flex;
@@ -186,21 +194,20 @@ nav a:hover {
 }
 
 .producto__titulo {
-    color: aliceblue;
     text-align: center;
     font-size: 35px;
     padding-bottom: 20px;
 }
 
 .producto__parrafo {
-    color: #000000;
     text-align: center;
     font-size: larger;
     padding-bottom: 10px;
 }
 
 .producto__link {
-    color: greenyellow;
+    color: rgb(153, 255, 0);
+    font-weight: 400;
     text-decoration: none;
     text-align: center;
     font-size: 30px;
@@ -221,33 +228,16 @@ nav a:hover {
     color: rgb(60 4 119);
     text-align: center;
     font-size: 45px;
-    font-weight: 200;
     text-decoration: underline;
     padding-top: 10px;
 }
 
 .sectionInicio div p {
-    color: aliceblue;
     font-size: 30px;
-    font-weight: 200;
     padding: 150px 5px;
 }
 
-footer {
-    color: aliceblue;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 25px;
-}
-/*
 
-.sectionInicio div img {
-    height: auto;
-    max-width: 50%;
-    
-    
-}
-*/
 
 /*
 
